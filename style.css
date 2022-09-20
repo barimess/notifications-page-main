@@ -43,7 +43,7 @@ html {
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 16px;
-    background-color: var(--Very-light-grayish-blue);
+    background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,9 +53,13 @@ body {
     padding:0;
 }
 
+@media (min-width: 375px) {
+    body {
+        background-color: var(--Very-light-grayish-blue);
+    }
+}
 main {
     width: 100%;
-    outline: 1px red solid;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,6 +113,118 @@ main {
     color: var(--Blue);
 }
 
+.norifications {
+    display: flex;
+    flex-direction: column;
+}
+
+.notification {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    padding: 18px;
+}
+
+.notification--unseen {
+    background-color: var(--Very-light-grayish-blue);
+}
+
+.notification:not(:last-child) {
+    margin-bottom: 8px;
+}
+.notification__maincontent {
+    display: flex;
+}
+
+.notification__useravatar {
+    max-width: 46px;
+    max-height: 46px;
+    margin-right: 18px;
+}
+
+.notification__contenttextual {
+}
+
+.notification__content {
+    line-height: 1.4rem;
+    margin: 0;
+    padding: 0;
+}
+
+.notification__user{
+    transition: color 0.3s;
+}
+
+.notification__user:hover {
+    cursor: pointer;
+    color: var(--Blue);
+}
+
+.notification__useraction {
+    color: var(--Dark-grayish-blue);
+}
+
+.notification__extra {
+    color: var(--Dark-grayish-blue);
+    font-weight: 800;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.notification__extra:hover {
+    color: var(--Blue);
+}
+
+.notification__unseen {
+    display: inline-block;
+    visibility: visible;
+    background-color: var(--Red);
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin-left: 4px;
+}
+
+.notification__date {
+    color: var(--Grayish-blue);
+    margin: 4px;
+    padding: 0;
+}
+
+.notification__privatemessage {
+    color: var(--Dark-grayish-blue);
+    border: 1px var(--Light-grayish-blue1) solid;
+    padding: 20px;
+}
+
+.notification__privatemessage:hover {
+    background-color: var(--Light-grayish-blue1);
+
+}
+
+.notification__additionalcontent__image{
+    border: 2px solid var(--White);
+    border-radius: 8px;
+    padding: 1px;
+    width: 45px;
+    height: 45px;
+    transition: scale 0.4s;
+}
+
+.notification__additionalcontent__image:hover {
+    border: 2px solid var(--Light-grayish-blue2);
+    border-radius: 8px;
+    cursor: pointer;
+    scale: 1.2;
+}
+
+.blue {
+    color: var(--Blue);
+}
+
+.blue:hover {
+    color: var(--Dark-grayish-blue);
+}
 
 .footer {
     position: fixed;
