@@ -196,6 +196,7 @@ main {
 
 .notification__privatemessage:hover {
     background-color: var(--Light-grayish-blue1);
+    cursor: pointer;
 
 }
 
