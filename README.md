@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://barimess.github.io/notifications-page-main)
+- Live Site URL: [live site](https://barimess.github.io/notifications-page-main)
 
 ## My process
 
