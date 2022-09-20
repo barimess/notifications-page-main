@@ -88,7 +88,7 @@ main {
     padding: 0;
 }
 
-.notifications-number {
+.notifications--number {
     background-color: var(--Blue);
     color: var(--White);
     padding: 3px 12px;
@@ -140,9 +140,6 @@ main {
     max-width: 46px;
     max-height: 46px;
     margin-right: 18px;
-}
-
-.notification__contenttextual {
 }
 
 .notification__content {
