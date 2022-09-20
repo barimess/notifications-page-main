@@ -47,7 +47,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* to be removed after work. */
+    /* adding this breaks the page making everything slide up */
     /* height: 100vh; */
     margin:0;
     padding:0;
